@@ -1,0 +1,95 @@
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: rgb(255, 174, 197);
+  align-items: center;
+  flex-direction: column;
+}
+
+.startA {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 0);
+  z-index: 10;
+}
+.start {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 2px solid rgb(255, 0, 0);
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  box-shadow: 5px 5px 7px rgb(0, 0, 0);
+}
+
+/* 上部分 */
+.up {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  justify-content: space-evenly;
+  background-color: rgb(255, 120, 160);
+  box-shadow: 0px 3px 10px rgb(218, 108, 144);
+}
+/* 上部分小块 */
+.fff {
+  border-radius: 2vw;
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+/* 中间部分 */
+.center {
+  display: flex;
+  align-items: center;
+  width: 75vw;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cxk {
+  animation: rolling 20s linear infinite;
+  position: absolute;
+  display: flex;
+}
+
+img {
+  height: 100px;
+  float: left;
+  margin-right: 50px;
+}
+
+@keyframes rolling {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-94%);
+  }
+}
+/* 下部分 */
+.down {
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  color: rgb(249, 83, 152);
+}
